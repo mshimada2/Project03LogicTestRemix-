@@ -1,0 +1,35 @@
+
+span.hidden-message{
+  opacity: 0.0;
+}
+span.shown-message{
+  opacity: 1.0;
+}
+
+
+
+h1
+{
+  font-weight: bold;
+  color: red;
+}
+
+h2
+{
+  font-weight: bold;
+  color: blue;
+}
+
+.input
+{
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+
+body{
+
+text-align: left;
+
+}
