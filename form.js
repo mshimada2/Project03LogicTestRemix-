@@ -1,4 +1,4 @@
-//made by McDermott Liam Shimada 
+//made by McDermott Liam Shimada
 function validateAnswer(){
 
   var answerEntered = document.getElementById("answer").value;
@@ -52,8 +52,6 @@ document.getElementById("answerrGroup").classList.add("has-success");
 }
 }
 
-
-//page3
 
 function validateAnswerrr(){
 

@@ -1,6 +1,7 @@
 
 span.hidden-message{
   opacity: 0.0;
+
 }
 span.shown-message{
   opacity: 1.0;
@@ -8,28 +9,52 @@ span.shown-message{
 
 
 
-h1
-{
+h1{
   font-weight: bold;
   color: red;
+  font-size: 100px;
+  text-align: center;
 }
 
-h2
-{
+.x{
+font-size: 50px;
+color: green;
+}
+
+
+h2{
   font-weight: bold;
-  color: blue;
+  font-size: 50px;
+  text-align: center;
 }
 
-.input
-{
-  font-size: 25px;
-  font-weight: bold;
+a:hover{
+
+background-color: yellow;
 
 }
 
+.title{
+background-image: url(https://c1.staticflickr.com/1/121/254257835_88bfd46389.jpg);
 
-body{
+}
 
-text-align: left;
+.one{
+background-image: url(http://api.ning.com/files/-37qv74QBaFt9c2eB7tFcZApY4FGfhsgOHl0UmkFFfyXfNHdzBMxDcd0kxhAmbn84unnrGoFOguN1olI*0Y5xhx7wPqIl6ZK/ChicoUpperParkBearHole.jpg);
+
+}
+
+.two{
+background-image: url(https://s-media-cache-ak0.pinimg.com/736x/ea/f7/48/eaf748c9f57be72425a73b9d76a18890.jpg);
+
+}
+
+.three{
+background-image: url(http://static.panoramio.com/photos/large/1941855.jpg);
+
+}
+
+.four{
+background-image: url(https://pbs.twimg.com/profile_images/676716661060165633/gTYVJLdK_400x400.jpg);
 
 }
