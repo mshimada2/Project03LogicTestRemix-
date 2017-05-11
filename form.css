@@ -14,19 +14,21 @@ h1{
   color: red;
   font-size: 100px;
   text-align: center;
+  background-color: black;
 }
-
-.x{
-font-size: 50px;
-color: green;
-}
-
 
 h2{
   font-weight: bold;
   font-size: 50px;
-  text-align: center;
+  text-align: left;
 }
+
+h4{
+  font-weight: bold;
+  font-size: 50px;
+  text-align: left;
+}
+
 
 a:hover{
 
@@ -34,27 +36,41 @@ background-color: yellow;
 
 }
 
-.title{
-background-image: url(https://c1.staticflickr.com/1/121/254257835_88bfd46389.jpg);
-
-}
-
-.one{
-background-image: url(http://api.ning.com/files/-37qv74QBaFt9c2eB7tFcZApY4FGfhsgOHl0UmkFFfyXfNHdzBMxDcd0kxhAmbn84unnrGoFOguN1olI*0Y5xhx7wPqIl6ZK/ChicoUpperParkBearHole.jpg);
-
-}
-
-.two{
-background-image: url(https://s-media-cache-ak0.pinimg.com/736x/ea/f7/48/eaf748c9f57be72425a73b9d76a18890.jpg);
-
-}
-
-.three{
-background-image: url(http://static.panoramio.com/photos/large/1941855.jpg);
-
-}
-
 .four{
-background-image: url(https://pbs.twimg.com/profile_images/676716661060165633/gTYVJLdK_400x400.jpg);
 
+}
+
+.genic{
+  background-image: url(genic1.png);
+
+}
+
+.wrong{
+
+background-image: url(buffstankface.png);
+height:100%;
+width:100%;
+}
+
+.center{
+
+text-align: center;
+
+}
+
+.list{
+
+font-size: 50px;
+color: red;
+}
+
+a{
+color: darkblue;
+background-color: green;
+}
+
+.background{
+color: red;
+background-color: darkblue;
+font-size: 20px;
 }

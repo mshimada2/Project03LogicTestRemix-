@@ -1,136 +1,38 @@
 //made by McDermott Liam Shimada
-function validateAnswer(){
-
-  var answerEntered = document.getElementById("answer").value;
-
-if (answerEntered != 31){
-  document.getElementById("answerError").innerHTML="Wrong Answer";
-  document.getElementById("answerError").classList.remove("hidden-message");
-  document.getElementById("answerError").classList.add("shown-message");
-  //Turn the username items red
-  document.getElementById("answerGroup").classList.add("has-error");
-
-  }
-
-else {
-document.getElementById("answerError").innerHTML="Correct!";
-document.getElementById("answerError").classList.remove("hidden-message");
-document.getElementById("answerError").classList.add("shown-message");
-//Turn the username items red
-  document.getElementById("answerGroup").classList.remove("has-error");
-document.getElementById("answerGroup").classList.add("has-success");
-
-
-}
-}
-
-
-//page 2
-
-function validateAnswerr(){
-
-  var answerrEntered = document.getElementById("answerr").value;
-
-if (answerrEntered != 60){
-  document.getElementById("answerrError").innerHTML="Wrong Answer";
-  document.getElementById("answerrError").classList.remove("hidden-message");
-  document.getElementById("answerrError").classList.add("shown-message");
-  //Turn the username items red
-  document.getElementById("answerrGroup").classList.add("has-error");
-
-  }
-
-else {
-document.getElementById("answerrError").innerHTML="Correct!";
-document.getElementById("answerrError").classList.remove("hidden-message");
-document.getElementById("answerrError").classList.add("shown-message");
-//Turn the username items red
-  document.getElementById("answerrGroup").classList.remove("has-error");
-document.getElementById("answerrGroup").classList.add("has-success");
-
-
-}
-}
-
-
-function validateAnswerrr(){
-
-  var answerrrEntered = document.getElementById("answerrr").value;
-
-if (answerrrEntered != 90){
-  document.getElementById("answerrrError").innerHTML="Wrong Answer";
-  document.getElementById("answerrrError").classList.remove("hidden-message");
-  document.getElementById("answerrrError").classList.add("shown-message");
-  //Turn the username items red
-  document.getElementById("answerrrGroup").classList.add("has-error");
-
-  }
-
-else {
-document.getElementById("answerrrError").innerHTML="Correct!";
-document.getElementById("answerrrError").classList.remove("hidden-message");
-document.getElementById("answerrrError").classList.add("shown-message");
-//Turn the username items red
-  document.getElementById("answerrrGroup").classList.remove("has-error");
-document.getElementById("answerrrGroup").classList.add("has-success");
-
-
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+var answer = [4,5,10];
 var runningTotal = 0;
 
 function addAnswer()
 {
   var answerEntered = document.getElementById("answer").value;
 
-if (answerEntered != 31) {
+if (answerEntered == answer[0]) {
 
-  alert("Try Again!");
+  runningTotal = runningTotal +1; // update the innerHTML of the span with the id "subtotal" to be dollars // update the value of the input with the id "price" to be an empty string
+  setCookie("answer", runningTotal, 1);  // update a cookie called "preTax" with the value of runningTotal
 
-}
+  window.location.replace("yourright.html");
+  }
+else {
 
-else{//OTHERWISE,
-runningTotal = runningTotal +1; // update the innerHTML of the span with the id "subtotal" to be dollars // update the value of the input with the id "price" to be an empty string
-setCookie("answer", runningTotal, 1);  // update a cookie called "preTax" with the value of runningTotal
-
-alert("Correct!");
-
+  window.location.replace("yourwrong.html");
 }
 }
-
-
-
 
 function addAnswerr()
 {
   var answerrEntered = document.getElementById("answerr").value;
 
-if (answerrEntered != 60) {
+if (answerrEntered == answer[1]) {
+  runningTotal = getCookie("answer"); // update the innerHTML of the span with the id "subtotal" to be dollars // update the value of the input with the id "price" to be an empty string
+  runningTotal = Number(runningTotal);
+  runningTotal++;
+  setCookie("answer", runningTotal, 1);  // update a cookie called "preTax" with the value of runningTotal
 
-  alert("Try Again!");
-
+window.location.replace("yourright2.html");
 }
-
-else{//OTHERWISE,
-runningTotal = getCookie("answer"); // update the innerHTML of the span with the id "subtotal" to be dollars // update the value of the input with the id "price" to be an empty string
-runningTotal = Number(runningTotal);
-runningTotal++;
-setCookie("answer", runningTotal, 1);  // update a cookie called "preTax" with the value of runningTotal
-
-alert("Correct!");
+else{
+window.location.replace("yourwrong2.html")
 
 }
 }
@@ -141,20 +43,21 @@ function addAnswerrr()
 {
   var answerrrEntered = document.getElementById("answerrr").value;
 
-if (answerrrEntered != 90) {
-
-  alert("Try Again!");
-
-}
-
-else{//OTHERWISE,
+if (Number(answerrrEntered) == answer[2]) {
 
   runningTotal = getCookie("answer"); // update the innerHTML of the span with the id "subtotal" to be dollars // update the value of the input with the id "price" to be an empty string
   runningTotal = Number(runningTotal);
   runningTotal++;
   setCookie("answer", runningTotal, 1);  // update a cookie called "preTax" with the value of runningTotal
 
-alert("Correct!");
+  window.location.replace("yourright3.html");
+
+}
+
+else{
+
+  window.location.replace("yourwrong3.html")
+
 }
 }
 
